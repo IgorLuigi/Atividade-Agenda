@@ -3,10 +3,14 @@ package Construtor;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.EntityManager;
+
 import Entidades.Contato;
+import Infra.EntityManagerFactoryProducer;
 
 
 public class Agenda {
+	
 
 	private List<Contato> listaContatos = new ArrayList<>();
 
@@ -61,5 +65,5 @@ public class Agenda {
 		listaContatos.remove(contato);
 		System.out.println("Contato removido com sucesso");
 	}
-
 }
+

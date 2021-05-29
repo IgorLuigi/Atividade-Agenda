@@ -2,11 +2,19 @@ package Entidades;
 
 import java.util.Objects;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Contato {
 
 	private String nome;
 	private String numerotelefone;
 	private String email;
+	
+	@Deprecated
+	public Contato() {
+		
+	}
 	
 	public Contato(String nome) {
 		this.nome = nome;
